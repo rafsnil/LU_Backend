@@ -27,6 +27,6 @@ public class AuthController {
         if (student != null && passwordEncoder.matches(loginRequest.getPassword(), student.getPassword())) {
             return Common.sendResponse(HttpStatus.OK, "Login successful", ResponseDTO.toResponseDTO(student));
         }
-        return Common.sendResponse(HttpStatus.UNAUTHORIZED, "Invalid username or password", null);
+        return Common.sendResponse(HttpStatus.BAD_REQUEST, "Invalid username or password", ResponseDTO.toResponseDTO(student));
     }
 }
