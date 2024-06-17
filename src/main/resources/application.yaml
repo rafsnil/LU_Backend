@@ -1,0 +1,10 @@
+server:
+    port: 8081
+
+spring:
+    application:
+        name: LU_BACKENDLU_BACKEND
+    data:
+        mongodb:
+          uri: mongodb+srv://tahsinminal:ufAFmdVvxCUpP2ce@cluster0.mitfgcp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+          database: LU_STUDENT_INFORMATION
